@@ -1,0 +1,22 @@
+{
+    "$ref": "#/definitions/item",
+    "additionalProperties": false,
+    "definitions": {
+    "item": {
+      "title": "Item",
+      "type": "object",
+      "description": "An item in the list",
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "state": {
+          "title": "State",
+          "type": "string",
+          "enum": ["active", "inactive"]
+        }
+      }
+    }
+    }
+}
